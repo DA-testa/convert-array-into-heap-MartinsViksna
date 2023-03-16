@@ -15,7 +15,7 @@ def build_heap(data):
             if rightnode <= gar-1 and data[rightnode]<data[root]:
                 root = rightnode
             if i!=root:
-                swaps.append(i,root)
+                swaps.append((i,root))
                 data[i], data[root]=data[root],data[i]
                 i = root
             else:
