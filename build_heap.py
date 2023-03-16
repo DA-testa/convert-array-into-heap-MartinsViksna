@@ -4,7 +4,7 @@
 def build_heap(data):
     swaps = []
     gar = len(data)
-    for i in range(gar//2-1,-1,1):
+    for i in range(gar//2-1,-1,-1):
         root = i 
         boo = true
         while boo:
