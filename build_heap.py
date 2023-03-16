@@ -41,7 +41,7 @@ def main():
         try:
 
             with open(file_name)as file:
-                readl = file.readline()
+                readl = file.readlines()
                 n = int(readl[0])
                 data =  list(map(int, readl[1].split()))
         except IOError:
