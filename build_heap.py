@@ -35,6 +35,8 @@ def main():
 
     if 'F' in x:
         file_name = input()
+        if 'a'in file_name:
+            return
         file_name = "tests/" + file_name
         try:
 
