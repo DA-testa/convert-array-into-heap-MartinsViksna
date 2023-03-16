@@ -40,8 +40,7 @@ def main():
 
             with open(file_name)as file:
                 readl = int(file.readline())
-                parents = np.array( list(map(int, file.readline().split())))
-                print(compute_height(readl, parents))
+                data =  list(map(int, readl[1].split()))
         except IOError:
             print("no such file")
             return
