@@ -6,7 +6,7 @@ def build_heap(data):
     gar = len(data)
     for i in range(gar//2-1,-1,-1):
         root = i 
-        boo = true
+        boo = True
         while boo:
             leftnode = 2*i+1
             rightnode = 2*i+2
@@ -19,7 +19,7 @@ def build_heap(data):
                 data[i], data[root]=data[root],data[i]
                 i = root
             else:
-                boo = false
+                boo = False
     return swaps
 
             
