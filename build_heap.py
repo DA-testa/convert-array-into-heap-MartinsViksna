@@ -14,7 +14,7 @@ def build_heap(data):
                 root = leftnode
             else:
                 root = rightnode
-            if i<>root:
+            if i!=root:
                 swaps.append(i,root)
                 data[i], data[root]=data[root],data[i]
                 i = root
